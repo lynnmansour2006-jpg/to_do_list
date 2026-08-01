@@ -18,21 +18,31 @@ body{
    background-color: white;
     width: 450px;
     margin: 40px auto 20px;
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-#input{
-    width: 90%;
+#taskInput{
+    width: 60%;
     padding: 14px;
     font-size: 18px;
     border:1px solid #d8a7b1;
     outline: none;
     border-radius: 10px;
 }
-#input:focus {
+#taskInput:focus {
     border-color: #b76e79;
+}
+#addButton{
+width:20%;
+padding: 10px;
+border:1px solid #d8a7b1;
+ border-radius: 10px;
+ outline: none;
+ color: #b76e79;
+ font-size: 16px;
+ background-color: white;
 }
 .box{
     background-color: white;
@@ -43,6 +53,7 @@ body{
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 .box ul{
     list-style: none;
     padding: 0;
@@ -58,12 +69,16 @@ body{
     align-items: center;
     border-radius: 10px;
 }
-.box input[type="checkbox"] {
+.box taskInput[type="checkbox"] {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
-.box input[type="checkbox"]:checked+span{
+.box taskInput[type="checkbox"]:checked+span{
   text-decoration: line-through;
   color: gray;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
